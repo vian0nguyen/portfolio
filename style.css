@@ -24,7 +24,7 @@ nav > div{
 }
 
 section {
-    display: flex;
+    /*display: flex;*/
     padding:30px 0;
     overflow:hidden;
 }
@@ -41,9 +41,10 @@ footer {
     display: flex;
     justify-content: center;
 }
-footer > div{
+footer div{
     display:inline-flex;
+    margin:0 100px;
 }
-footer>a{
+footer a{
     padding:50px;
 }
