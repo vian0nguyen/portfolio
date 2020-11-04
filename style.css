@@ -1,8 +1,12 @@
 ﻿
-h1{
+h1, h2{
     font-family: 'Nunito', sans-serif;
 }
 
 body{
     font-family:'Overpass', sans-serif;
+}
+
+nav > div{
+    display: inline-flex;
 }
