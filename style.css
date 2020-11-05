@@ -13,6 +13,7 @@ h4 {
 body{
     font-family:'Overpass', sans-serif;
     margin:10vh 10vw;
+    /*margin:0 0 0 10vw;*/
 }
 
 header{
@@ -31,7 +32,8 @@ section {
 
 section img{
     float:right;
-    padding-left:20px; 
+    padding-left:20px;
+    margin-bottom:10px;
 }
 
 /*.projText{
