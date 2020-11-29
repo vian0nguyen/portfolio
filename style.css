@@ -40,6 +40,7 @@ section {
     padding:30px 0;
     overflow:hidden;
     margin-right:-90px;
+    margin-left:-90px;
 }
     section .pic {
         float: right;
@@ -47,14 +48,21 @@ section {
         margin-right:90px;
         margin-bottom: 10px;
     }
+
+    section .desc {
+        margin-left: 90px;
+
+
+    }
     section .gallery {
         float: right;
         margin-bottom: 10px;
 
         overflow-x: auto;
         overflow-y: hidden;
-        height: 500px;
+        /*height: 500px;*/
         width: 75%;
+        height:100%;
         white-space: nowrap;
     }
 
@@ -62,9 +70,24 @@ section {
             white-space: nowrap;
         }
 
+    section .galleryTwo {
+        float: right;
+        margin-bottom: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: 500px;
+        width: 75%;
+        white-space: nowrap;
+    }
+
+        section .galleryTwo img {
+            white-space: nowrap;
+        }
+
         /*.projText{
     padding-right:25px;
 }*/
+
 a:link, a:visited {
     background-color: white;
     font-style: oblique;
