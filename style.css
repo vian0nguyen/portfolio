@@ -27,20 +27,35 @@ body{
 header{
     text-align:center;
 }
+
+.autoscale {
+    max-width: 100%;
+    height: auto;
+    /*https://responsivedesign.is/guidelines/flexible-images-and-media/*/
+}
+
+.textback{
+    background-color:#FFF;
+    padding: 10px 20px;
+    margin-top:10px;
+
+}
+
 nav{
     font-size:1.36em;
 }
 
 nav > div{
     display: inline-flex;
+
 }
 
 section {
     /*display: flex;*/
     padding:30px 0;
     overflow:hidden;
-    margin-right:-90px;
-    margin-left:-90px;
+    margin: 0px -90px;
+    position:relative;
 }
     section .pic {
         float: right;
@@ -51,7 +66,6 @@ section {
 
     section .desc {
         margin-left: 90px;
-
 
     }
     section .gallery {
@@ -69,19 +83,26 @@ section {
             white-space: nowrap;
         }
 
-    section .galleryTwo {
-        float: right;
+    section .descI {
+       margin-left: 90px;
+        float: left;
+        width:35vw;
+        position:absolute;
+    }
+
+    section .galleryI {
         margin-bottom: 10px;
         overflow-x: auto;
         overflow-y: hidden;
-        height: 500px;
-        width: 75%;
+        width:100%;
+        height: 100%;
         white-space: nowrap;
     }
 
-        section .galleryTwo img {
+        section .galleryI img {
             white-space: nowrap;
         }
+        
 
         /*.projText{
     padding-right:25px;
@@ -90,12 +111,16 @@ section {
 a:link, a:visited {
     background-color: white;
     font-style: oblique;
-    color: #636FB6;
+    color: #000;
+    text-decoration:underline;
 }
 
     a:link:active, a:visited:active {
 
+        color:#FFF;
         background-color: black;
+        text-decoration-line:line-through;
+        text-decoration-style:solid;
     }
 
 footer {
@@ -107,5 +132,5 @@ footer div{
     margin:0 100px;
 }
 footer a{
-    padding:50px;
+    padding:10px;
 }
