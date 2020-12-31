@@ -103,9 +103,23 @@ section {
         white-space: nowrap;
     }
 
-        section .galleryI img {
+    section .galleryI img {
             white-space: nowrap;
-        }
+    }
+/* Opacity #2  https://codepen.io/nxworld/pen/ZYNOBZ*/
+    .galleryI .overlay img {
+        background: #1abc9c;
+    }
+
+    .galleryI .overlay img {
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .galleryI .overlay:hover img {
+        opacity: .5;
+    }
         
 
         /*.projText{
