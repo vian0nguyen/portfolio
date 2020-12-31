@@ -137,22 +137,23 @@ a:link:hover {
     text-decoration: underline overline;
 }
 
-    a:link:active, a:visited:active {
-
-        color:#FFF;
-        background-color: black;
-        text-decoration-line:line-through;
-        text-decoration-style:solid;
-    }
+a:link:active, a:visited:active {
+    color:#FFF;
+    background-color: black;
+    text-decoration-line:line-through;
+    text-decoration-style:solid;
+}
 
 footer {
     display: flex;
     justify-content: center;
 }
+
 footer div{
     display:inline-flex;
     margin:0 100px;
 }
+
 footer a{
     padding:10px;
 }
