@@ -2,6 +2,8 @@
 h1{
     font-family: 'Nunito', sans-serif;
     font-size: 3.85em;
+    margin-bottom:-7px;
+    margin-top:-10px;
 }
 h2 {
     font-family: 'Nunito', sans-serif;
@@ -11,6 +13,7 @@ h2 {
 h4 {
     font-weight: lighter;
 }
+
 
 .noGap{
     margin:0;
