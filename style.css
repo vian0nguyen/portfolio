@@ -152,6 +152,13 @@ a:link:active, a:visited:active {
     text-decoration-style:solid;
 }
 
+.visiting:any-link {
+    color: #FFF;
+    background-color: black;
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+}
+
 footer {
     display: flex;
     justify-content: center;
