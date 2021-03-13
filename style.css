@@ -1,5 +1,13 @@
 ﻿
 
+@media (min-width: 1450px){
+    body {
+        background-color: yellow;
+        /*turns yellow when galleries start to misalign*/
+    }
+    
+}
+
 h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 3.85em;
@@ -73,7 +81,6 @@ section {
 
     section .desc {
         margin-left: 90px;
-
     }
     section .gallery {
         float: right;
@@ -81,13 +88,13 @@ section {
 
         overflow-x: auto;
         overflow-y: hidden;
-        max-width: 75%;
-        height:100%;
+        max-width: 55%;
+        height:50%;
         white-space: nowrap;
     }
 
-    section .gallery img {
-            white-space: nowrap;
+        section .gallery img {
+            /*white-space: nowrap;*/
         }
 
     section .descI {
@@ -163,8 +170,6 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    max-width: 150px;
-    margin: 0 50vh; /*this is such a GROSS solution but its fine dude*/
 }
 
     footer div {
