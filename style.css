@@ -181,7 +181,7 @@ footer a{
     padding:10px;
 }
 
-@media only screen and (max-width: 480px) { /*common media query for mobile*/
+@media only screen and (max-width: 850px) { /*common media query for mobile*/
     html {
         background-color: blue;
     }
@@ -203,6 +203,10 @@ footer a{
 
     section .desc{
         margin:16px;
+    }
+
+    section .gallery{
+        max-width:100%;
     }
 
         section .pic {
