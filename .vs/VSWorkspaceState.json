@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Portfolio",
+    "\\Portfolio\\HouseAlive",
+    "\\Portfolio\\Postcard"
   ],
-  "SelectedNode": "\\Digital_projects.html",
+  "SelectedNode": "\\style.css",
   "PreviewInSolutionExplorer": false
 }
