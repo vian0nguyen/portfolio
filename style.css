@@ -1,10 +1,13 @@
 ﻿
 
+
+
 h1 {
     font-family: 'Nunito', sans-serif;
     font-size: 3.85em;
     margin-bottom: -7px;
     margin-top: -10px;
+    /*TODO: might add a hero div to scroll through the nice nature pic*/
 }
 h2 {
     font-family: 'Nunito', sans-serif;
@@ -54,6 +57,17 @@ nav > div{
 
 }
 
+@media (min-width: 1450px) {
+    body {
+        background-color: yellow;
+        /*turns yellow when galleries start to misalign*/
+    }
+
+    section .descWidth {
+        /*word-wrap: break-word;*/
+        width: 100px;
+    }
+}
 section {
     /*display: flex;*/
     padding:30px 0;
@@ -73,7 +87,6 @@ section {
 
     section .desc {
         margin-left: 90px;
-
     }
     section .gallery {
         float: right;
@@ -81,13 +94,13 @@ section {
 
         overflow-x: auto;
         overflow-y: hidden;
-        max-width: 75%;
-        height:100%;
+        max-width: 55%;
+        height:50%;
         white-space: nowrap;
     }
 
-    section .gallery img {
-            white-space: nowrap;
+        section .gallery img {
+            /*white-space: nowrap;*/
         }
 
     section .descI {
@@ -130,6 +143,10 @@ section {
     }
         
 
+        /*.projText{
+    padding-right:25px;
+}*/
+
 a:link, a:visited {
     background-color: white;
     font-style: oblique;
@@ -148,12 +165,17 @@ a:link:active, a:visited:active {
     text-decoration-style:solid;
 }
 
+.visiting:any-link {
+    color: #FFF;
+    background-color: black;
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+}
+
 footer {
     display: flex;
     justify-content: center;
     text-align: center;
-    max-width: 150px;
-    margin: 0 50vh; /*this still DONT work?? wtf*/
 }
 
     footer div {
@@ -165,7 +187,7 @@ footer a{
     padding:10px;
 }
 
-@media only screen and (max-width: 480px) { /*common media query for mobile*/
+@media only screen and (max-width: 850px) { /*common media query for mobile*/
     html {
         background-color: blue;
     }
@@ -187,6 +209,10 @@ footer a{
 
     section .desc{
         margin:16px;
+    }
+
+    section .gallery{
+        max-width:100%;
     }
 
         section .pic {
