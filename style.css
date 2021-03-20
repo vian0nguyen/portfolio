@@ -25,9 +25,9 @@ h4 {
 }
 
 
-body{
-    font-family:'Overpass', sans-serif;
-    margin:90px 90px; /*vertical and horiz*/
+body {
+    font-family: 'Overpass', sans-serif;
+    /* margin:90px 90px;*/ vertical and horiz
     /*margin:0 0 0 10vw;*/
 }
 
@@ -38,7 +38,7 @@ header{
 .autoscale {
     max-width: 100%;
     height: auto;
-    /*https://responsivedesign.is/guidelines/flexible-images-and-media/*/
+    /* https://responsivedesign.is/guidelines/flexible-images-and-media/ */
 }
 
 .textback{
@@ -68,12 +68,13 @@ nav > div{
         width: 100px;
     }
 }
+
 section {
-    /*display: flex;*/
-    padding:30px 0;
-    overflow:hidden;
+    /*display: flex;
+    padding: 30px 0; */
     margin: 0px -90px;
-    position:relative;
+    overflow: hidden;
+    position: relative;
 }
     section img{
         max-width:100%;
@@ -104,10 +105,7 @@ section {
         }
 
     section .descI {
-       margin-left: 90px;
-        float: left;
-
-        position:absolute;
+        margin-left: 90px;
     }
 
     section .descWidth {
@@ -116,12 +114,16 @@ section {
     }
 
     section .galleryI {
-        margin-bottom: 10px;
+        /*margin-bottom: 10px;
         overflow-x: auto;
         overflow-y: hidden;
         width:100%;
         height: 100%;
-        white-space: nowrap;
+        white-space: nowrap;*/
+
+        justify-content:center;
+        display:flex;
+        flex-direction:row;
     }
 
     section .galleryI img {
@@ -192,13 +194,13 @@ footer a{
         background-color: blue;
     }
 
+
     section{
         padding:0;
     }
-
+    /*flex box then direction-column*/
     section .descI {
         margin: 0;
-        float: left;
         position: initial;
     }
     
@@ -209,6 +211,7 @@ footer a{
 
     section .desc{
         margin:16px;
+        max-width:30%;
     }
 
     section .gallery{
