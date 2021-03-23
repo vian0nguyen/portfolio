@@ -12,6 +12,7 @@ h1 {
 h2 {
     font-family: 'Nunito', sans-serif;
     font-size: 1.98em;
+    margin:40px 40px;
 }
 
 h4 {
@@ -27,8 +28,8 @@ h4 {
 
 body {
     font-family: 'Overpass', sans-serif;
-    /* margin:90px 90px;*/ vertical and horiz
-    /*margin:0 0 0 10vw;*/
+    margin: 90px 90px; /*vertical and horiz
+    margin:0 0 0 10vw;*/
 }
 
 header{
@@ -39,6 +40,9 @@ header{
     max-width: 100%;
     height: auto;
     /* https://responsivedesign.is/guidelines/flexible-images-and-media/ */
+}
+
+img { 
 }
 
 .textback{
@@ -57,17 +61,7 @@ nav > div{
 
 }
 
-@media (min-width: 1450px) {
-    body {
-        background-color: yellow;
-        /*turns yellow when galleries start to misalign*/
-    }
 
-    section .descWidth {
-        /*word-wrap: break-word;*/
-        width: 100px;
-    }
-}
 
 section {
     /*display: flex;
@@ -76,9 +70,7 @@ section {
     overflow: hidden;
     position: relative;
 }
-    section img{
-        max-width:100%;
-    }
+
     section .pic {
         float: right;
         padding-left: 20px;
@@ -95,13 +87,16 @@ section {
 
         overflow-x: auto;
         overflow-y: hidden;
-        max-width: 55%;
-        height:50%;
+        max-width: 55%; /*for auto sizing images to work you need to set a width of the container*/
+                        /*TODO: images have wide spaces in between em??*/
         white-space: nowrap;
     }
 
         section .gallery img {
-            /*white-space: nowrap;*/
+            /*auto size images to fit in container https://www.arungudelli.com/tutorial/css/auto-resize-an-image-to-fit-into-a-html-div-using-css/*/
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
         }
 
     section .descI {
@@ -120,7 +115,7 @@ section {
         width:100%;
         height: 100%;
         white-space: nowrap;*/
-
+        width: 50%;
         justify-content:center;
         display:flex;
         flex-direction:row;
@@ -187,6 +182,43 @@ footer {
 
 footer a{
     padding:10px;
+}
+
+@media (min-width: 1450px) { /*yellow for xl screen*/
+    body {
+        background-color: yellow;
+        /*turns yellow when galleries start to misalign*/
+    }
+
+    h2 {
+        margin-left: 15vw;
+    }
+
+    section {
+        margin: 0px;
+        overflow: hidden;
+ 
+    }
+
+    section .descI {
+        margin-left: 20vw;
+    }
+
+    section .descWidth {
+        max-width: 35vw;
+        min-width: 30vw;
+    }
+
+    section .gallery {
+        float: right;
+        margin-bottom: 20px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        max-width: 100%;
+        height: 40vh; /*this is cutting off the imgs*/
+        white-space: nowrap;
+
+    }
 }
 
 @media only screen and (max-width: 850px) { /*common media query for mobile*/
