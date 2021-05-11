@@ -197,22 +197,33 @@ footer a{
     section {
         overflow: hidden;
         margin: unset;
+        border:medium dotted red;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+
     }
 
         section .descI {
-            transform: translate(50%, 0);
-            justify-content: center;
-            margin-right: 50vw; /*this isnt centered??*/
+            /*transform: translate(50%, 0);
+             justify-content: center;*/
+            /*this isnt centered??*/
+
+            margin: auto;
+            width: 50vw;
+            border: medium dotted yellow;
         }
 
-    section .descWidth {
-        max-width: 35vw;
-        min-width: 30vw;
-    }
+        section .descWidth {
+            max-width:35vw;
+             min-width: 30vw;
+            border: medium solid green;*/
+        }
 
     .itchio {
-        text-align:center;
-        margin:0;
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
     }
 
         section .gallery {
@@ -273,6 +284,12 @@ footer a{
             margin: 0px;
             max-width:100%;
         }
+
+    .itchio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     footer{
         margin:0;
