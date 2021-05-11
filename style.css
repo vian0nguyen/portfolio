@@ -20,9 +20,9 @@ h4 {
 }
 
 
-.noGap{
-    margin:0;
-    padding:0;
+.noGap {
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -115,7 +115,7 @@ section {
         width:100%;
         height: 100%;
         white-space: nowrap;*/
-        width: 50%;
+        width: 100%;
         justify-content:center;
         display:flex;
         flex-direction:row;
@@ -184,9 +184,9 @@ footer a{
     padding:10px;
 }
 
-@media (min-width: 1450px) { /*yellow for xl screen*/
+@media (min-width: 1450px) { /*gray for xl screen*/
     body {
-        background-color: yellow;
+        background-color: #c9ccd1;
         /*turns yellow when galleries start to misalign*/
     }
 
@@ -195,30 +195,46 @@ footer a{
     }
 
     section {
-        margin: 0px;
         overflow: hidden;
- 
+        margin: unset;
     }
 
-    section .descI {
-        margin-left: 20vw;
-    }
+        section .descI {
+            transform: translate(50%, 0);
+            justify-content: center;
+            margin-right: 50vw; /*this isnt centered??*/
+        }
 
     section .descWidth {
         max-width: 35vw;
         min-width: 30vw;
     }
 
-    section .gallery {
-        float: right;
-        margin-bottom: 20px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        max-width: 100%;
-        height: 40vh; /*this is cutting off the imgs*/
-        white-space: nowrap;
-
+    .itchio {
+        text-align:center;
+        margin:0;
     }
+
+        section .gallery {
+            max-width: 100%;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            float: none;
+            overflow: hidden;
+            white-space: normal;
+            margin-top:10px;
+        }
+
+     section .gallery img {
+                width: 500px;
+                /*copy of autoscale class*/
+                max-width: 100%;
+                height: auto;
+                /*override white-space no wrap*/
+     }
+
+          
 }
 
 @media only screen and (max-width: 850px) { /*common media query for mobile*/
@@ -234,6 +250,7 @@ footer a{
     section .descI {
         margin: 0;
         position: initial;
+
     }
     
 
