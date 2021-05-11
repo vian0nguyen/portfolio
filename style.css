@@ -197,7 +197,6 @@ footer a{
     section {
         overflow: hidden;
         margin: unset;
-        border:medium dotted red;
         display:flex;
         flex-direction:column;
         justify-content:center;
@@ -211,7 +210,6 @@ footer a{
 
             margin: auto;
             width: 50vw;
-            border: medium dotted yellow;
         }
 
         section .descWidth {
@@ -248,7 +246,8 @@ footer a{
           
 }
 
-@media only screen and (max-width: 850px) { /*common media query for mobile*/
+/*https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+@media screen and (max-width: 850px) { /*common media query for mobile*/
     html {
         background-color: blue;
     }
