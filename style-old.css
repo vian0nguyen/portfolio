@@ -1,0 +1,293 @@
+﻿h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3.85em;
+    margin-bottom: -7px;
+    margin-top: -10px;
+    /*TODO: might add a hero div to scroll through the nice nature pic*/
+}
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.98em;
+    margin:40px 40px;
+}
+
+h4 {
+    font-weight: lighter;
+}
+
+
+.noGap {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Overpass', sans-serif;
+    margin: 90px 90px; /*vertical and horiz
+    margin:0 0 0 10vw;*/
+}
+
+header{
+    text-align:center;
+}
+
+.autoscale {
+    max-width: 100%;
+    height: auto;
+    /* https://responsivedesign.is/guidelines/flexible-images-and-media/ */
+}
+
+.textback{
+    background-color:#FFF;
+    padding: 10px 20px;
+    margin-top:10px;
+
+}
+
+nav{
+    font-size:1.36em;
+}
+
+nav > div{
+    display: inline-flex;
+
+}
+
+
+
+section {
+    /*display: flex;
+    padding: 30px 0; */
+    margin: 0px -90px;
+    overflow: hidden;
+    position: relative;
+}
+
+    section .pic {
+        float: right;
+        padding-left: 20px;
+        margin-right:90px;
+        margin-bottom: 10px;
+    }
+
+    section .desc {
+        margin-left: 90px;
+    }
+    section .gallery {
+        float: right;
+        margin-bottom: 10px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+        max-width: 55%; /*for auto sizing images to work you need to set a width of the container*/
+                        /*TODO: images have wide spaces in between em??*/
+        white-space: nowrap;
+    }
+
+        section .gallery img {
+            /*auto size images to fit in container https://www.arungudelli.com/tutorial/css/auto-resize-an-image-to-fit-into-a-html-div-using-css/*/
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+
+    section .descI {
+        margin-left: 90px;
+    }
+
+    section .descWidth {
+        max-width: 35vw;
+        min-width:30vw;
+    }
+
+    section .galleryI {
+        /*margin-bottom: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width:100%;
+        height: 100%;
+        white-space: nowrap;*/
+        width: 100%;
+        justify-content:center;
+        display:flex;
+        flex-direction:row;
+    }
+
+    section .galleryI img {
+            white-space: nowrap;
+    }
+/* Opacity change on hover  https://codepen.io/nxworld/pen/ZYNOBZ*/
+    .galleryI .overlay img {
+        background: #1abc9c;
+    }
+
+    .galleryI .overlay img {
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .galleryI .overlay:hover img {
+        opacity: .5;
+    }
+        
+
+        /*.projText{
+    padding-right:25px;
+}*/
+
+a:link, a:visited {
+    background-color: white;
+    font-style: oblique;
+    color: #000;
+    text-decoration:underline;
+}
+
+a:link:hover {
+    text-decoration: underline overline;
+}
+
+a:link:active, a:visited:active {
+    color:#FFF;
+    background-color: black;
+    text-decoration-line:line-through;
+    text-decoration-style:solid;
+}
+
+.visiting:any-link {
+    color: #FFF;
+    background-color: black;
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+    footer div {
+        display: inline-flex;
+
+    }
+
+footer a{
+    padding:10px;
+}
+
+@media (min-width: 1450px) { /*gray for xl screen*/
+    body {
+        background-color: #c9ccd1;
+        /*turns yellow when galleries start to misalign*/
+    }
+
+    h2 {
+        margin-left: 15vw;
+    }
+
+    section {
+        overflow: hidden;
+        margin: unset;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+
+    }
+
+        section .descI {
+            /*transform: translate(50%, 0);
+             justify-content: center;*/
+            /*this isnt centered??*/
+
+            margin: auto;
+            width: 50vw;
+        }
+
+        section .descWidth {
+            max-width:35vw;
+             min-width: 30vw;
+            border: medium solid green;
+        }
+
+    .itchio {
+        display: flex; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+        section .gallery {
+            max-width: 100%;
+            justify-content: center;
+            display: flex;
+            flex-direction: row;
+            float: none;
+            overflow: hidden;
+            white-space: normal;
+            margin-top:10px;
+        }
+
+     section .gallery img {
+                width: 500px;
+                /*copy of autoscale class*/
+                max-width: 100%;
+                height: auto;
+                /*override white-space no wrap*/
+     }
+
+          
+}
+
+/*https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+@media screen and (max-width: 850px) { /*common media query for mobile*/
+    html {
+        background-color: blue;
+    }
+
+
+    section{
+        padding:0;
+    }
+    /*flex box then direction-column*/
+    section .descI {
+        margin: 0;
+        position: initial;
+
+    }
+    
+
+    section .descWidth {
+        max-width: 100vw;
+    }
+
+    section .desc{
+        margin:16px;
+        max-width:30%;
+    }
+
+    section .gallery{
+        max-width:100%;
+    }
+
+        section .pic {
+            float: right;
+            padding: 20px;
+            margin: 0px;
+            max-width:100%;
+        }
+
+    .itchio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+        margin:0;
+    }
+        footer div {
+        display: inline-flex;
+        margin: 0 10%;
+        }
+}
