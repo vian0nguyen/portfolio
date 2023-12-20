@@ -2,90 +2,69 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
-    <link rel="icon" href="Portfolio/vian.png" type="image/png"> <!--tryin out an icon-->
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Vian Nguyen</h1>
-            <nav>
-                <div><a href="Digital_projects.html">digital</a></div>
-                <div><a href="Analog_projects.html">analog</a></div>
-                <div><a href="About.html">about</a></div>
-                <div><a href="https://jubnuggets.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></div>
-            </nav>
-        </header>
+    <header>
+        <h1>Vian Nguyen</h1>
+        <nav>
+            <div><a href="Digital_projects.html">digital</a></div> //
+            <div><a href="Analog_projects.html">analog</a></div> //
+            <div><a href="About.html">about</a></div> //
+            <div><a href="https://jubnuggets.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></div>
+        </nav>
+    </header>
 
-        <section>
+    <section>
+        <div class="descI">
             <h2 style="width:auto" class="textback"><a href="Digital_projects.html">digital</a> <span style="font-family:'Overpass'">////</span></h2>
-            <div class="galleryI">
-                <span class="overlay">
-                    <a href="Digital_projects.html#meat">
-                        <img class="autoscale" src="Portfolio/YouMeat/youmeat_logov2.png"  /> 
-                    </a>
-                </span>
-                <span class="overlay">
-                    <a href="Digital_projects.html#doll">
-                        <img class="autoscale" src="Portfolio/DysphoriaDiasporaDoll/ddDoll.png" /> 
-                    </a>
-                </span>
-                <span class="overlay">
-                    <a href="Digital_projects.html#cafe">
-                        <img class="autoscale" src="Portfolio/Cyber Cafe Carryout/title.png"  /> 
-                    </a>
-                </span>
-            </div>
-        </section>
+        </div>
+        <!--TODO: make another class and set the div to the center so stretching on wide screens still look ok :thumbsup:-->
+        <div class="galleryI">
+            <span class="overlay"><a href="Digital_projects.html#one"><img class="autoscale" src="Portfolio/Otters/title.png" width="700px" /> </a></span>
+            <span class="overlay"><a href="Digital_projects.html#two"><img class="autoscale" src="Portfolio/Neighborhood Good/NG_title.png" width="800px" /> </a></span>
+            <span class="overlay"><a href="Digital_projects.html#three"><img class="autoscale" src="Portfolio/Grobo/appicon.png" width="390px" /> </a></span>
+        </div>
 
-        <section>
+    </section>
+
+    <section>
+        <div class="descI">
             <h2 style="width:auto" class="textback"><a href="Analog_projects.html">analog</a> <span style="font-family:'Overpass'">////</span></h2>
-            <div class="galleryI">
-                <span class="overlay">
-                    <a href="Analog_projects.html#house">
-                        <img class="autoscale" src="Portfolio/HouseAlive/Cover_itchio.png" /> 
-                    </a>
-                </span>
-                <span class="overlay">
-                    <a href="Analog_projects.html#roof">
-                        <img class="autoscale" src="Portfolio/UnderOneRoof/uorLogo.png" /> 
-                    </a>
-                </span>
-                <span class="overlay">
-                    <a href="Analog_projects.html#grief">
-                        <img class="autoscale" src="Portfolio/Grief Game/griefLogo.png" /> 
-                    </a>
-                </span>
-            </div>
-        </section>
+        </div>
+        <div class="galleryI">
+            <span class="overlay"><a href="Analog_projects.html#house"><img class="autoscale" src="Portfolio/HouseAlive/Cover_itchio.png" width="500px" /> </a></span>
+            <span class="overlay"><a href="Analog_projects.html#roof"><img class="autoscale" src="Portfolio/UnderOneRoof/uorLogo.png" width="500px" /> </a></span>
+            <span class="overlay"><a href="Analog_projects.html#grief"><img class="autoscale" src="Portfolio/Grief Game/griefLogo.png" width="500px" /> </a></span>
+        </div>
+    </section>
 
-        <section class="about"> <!--flexbox-->
-            <h2><a href="About.html">about</a> <span style="font-family:'Overpass'">////</span></h2>
-            <div>
-                <img class="pic autoscale" src="Portfolio/vian.png" />
-                <div class="desc">
-                    <h3 class="noGap">Vian Nguyen</h3>
-                    <h4 class="noGap"><i> Graduated Maryland Institute College of Art</i> / <i>2020</i></h4>
-                    <p>
-                        Vian is a queer Vietnamese-American game designer.
-                        They are interested in game design as a means to facilitate spaces of feeling, self-reflection, and noticing the world around us.
-                        <br /><br />
-                        They are currently working at Filament Games as a Learning Games Designer.
-                    </p>
-                </div>
-            </div>
-        </section>
 
-        <footer>
-            <a href="https://jubnuggets.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a>
-            <a href="mailto:hello@jubnuggets.com" target="_blank" rel="noopener noreferrer">contact</a>
-            <a href="https://www.linkedin.com/in/vian-nguyen-182b6a17b/" target="_blank" rel="noopener noreferrer">linkedin</a>
-        </footer>
-    </div>
+    <h2><a href="About.html">about</a> <span style="font-family:'Overpass'">////</span></h2>
+
+    <section>
+        <img class="pic autoscale" src="Portfolio/vian.png" width="500px" />
+        <div class="desc">
+            <h3 class="noGap">Vian Nguyen</h3>
+            <h4 class="noGap"><i> Graduated Maryland Institute College of Art</i> / <i>2020</i></h4>
+             <p>
+                    Vian is a queer Vietnamese-American game designer. They are interested in game design as a means to facilitate spaces of feeling, self-reflection, and noticing the world around us all. They have a deep curiosity in innovating play’s ability to teach care, empathy, and understanding in players.
+                    <br /><br />
+                    They are currently working at Filament Games as a Game Designer II.
+                </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div><a href="https://jubnuggets.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></div>
+        <div><a href="mailto:vian0nguyen@gmail.com" target="_blank" rel="noopener noreferrer">contact</a></div>
+        <div><a href="https://www.linkedin.com/in/vian-nguyen-182b6a17b/" target="_blank" rel="noopener noreferrer">linkedin</a></div>
+
+    </footer>
 </body>
 </html>
