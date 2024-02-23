@@ -62,13 +62,25 @@ nav > div{
 
 }
 
-/*testing nonesense*/
+.column{
+    float: left;
+    padding: 10px;
 
-/*@media (min-width: 1450px) {
-    body {
-        background-color: yellow;
-        /*turns yellow when galleries start to misalign
-    }*/
+}
+
+.left {
+    width: 40%;
+}
+
+.right{
+    width: 50%;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
 section .descWidth {
     /*word-wrap: break-word;*/
@@ -117,8 +129,8 @@ section {
         position:absolute;
     }
     section .descII {
-        margin-left: 30%;
-        margin-right: 50%;
+       /* margin-left: 30%;
+        margin-right: 50%;*/
         float: none;
         position: center;
     }
@@ -156,14 +168,10 @@ section {
     }
         
 
-        /*.projText{
-    padding-right:25px;
-}*/
-
 a:link, a:visited {
-    background-color: white;
+    background-color: black;
     font-style: oblique;
-    color: #000;
+    color: white;
     text-decoration:underline;
 }
 
@@ -172,15 +180,15 @@ a:link:hover {
 }
 
 a:link:active, a:visited:active {
-    color:#FFF;
-    background-color: black;
+    color:black;
+    background-color: white;
     text-decoration-line:line-through;
     text-decoration-style:solid;
 }
 
 .visiting:any-link {
-    color: #FFF;
-    background-color: black;
+    color: black;
+    background-color: white;
     text-decoration-line: line-through;
     text-decoration-style: solid;
 }
@@ -200,13 +208,28 @@ footer a{
     padding:10px;
 }
 
+/*common fullscreen desktop query*/
+
+/*@media (min-width: 1450px) {
+    body {
+        background-color: yellow;
+        /*turns yellow when galleries start to misalign
+    }*/
+
 @media only screen and (max-width: 850px) { /*common media query for mobile*/
     html {
-        background-color: blue;
+        /*background-color: blue;*/
+    }
+    body {
+    margin: 5% 5%; /*vertical and horiz*/
+    }
+
+   .column{
+        width:100%;
     }
 
     section{
-        padding:0;
+        padding:0%;
     }
 
     section .descI {
