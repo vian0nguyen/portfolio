@@ -1,0 +1,268 @@
+﻿
+
+
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3.85em;
+    margin-bottom: -7px;
+    margin-top: -10px;
+    color: white;
+    /*TODO: might add a hero div to scroll through the nice nature pic*/
+}
+h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.98em;
+    color: white;
+}
+
+h4 {
+    font-weight: lighter;
+    color: white;
+}
+
+
+.noGap{
+    margin:0;
+    padding:0;
+}
+
+
+body {
+    font-family: 'Overpass', sans-serif;
+    margin: 90px 90px; /*vertical and horiz*/
+    /*margin:0 0 0 10vw;*/
+    background-color: #111226;
+    color: white;
+}
+
+header{
+    text-align:center;
+}
+
+.autoscale {
+    max-width: 100%;
+    height: auto;
+    /*https://responsivedesign.is/guidelines/flexible-images-and-media/*/
+}
+
+.textback{
+    background-color:#000;
+    padding: 10px 20px;
+    margin-top:10px;
+
+}
+
+nav{
+    font-size:1.36em;
+}
+
+nav > div{
+    display: inline-flex;
+
+}
+
+.column{
+    float: left;
+    padding: 10px;
+
+}
+
+.left {
+    width: 40%;
+}
+
+.right{
+    width: 50%;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section .descWidth {
+    /*word-wrap: break-word;*/
+    width: 100px;
+}
+}
+section {
+    /*display: flex;*/
+    padding:30px 0;
+    overflow:hidden;
+    margin: 0px -90px;
+    position:relative;
+}
+    section img{
+        max-width:100%;
+    }
+    section .pic {
+        float: right;
+        padding-left: 20px;
+        margin-right:90px;
+        margin-bottom: 10px;
+    }
+
+    section .desc {
+        margin-left: 90px;
+    }
+    section .gallery {
+        float: right;
+        margin-bottom: 10px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+        max-width: 55%;
+        height:50%;
+        white-space: nowrap;
+    }
+
+        section .gallery img {
+            /*white-space: nowrap;*/
+        }
+
+    section .descI {
+       margin-left: 90px;
+        float: left;
+
+        position:absolute;
+    }
+    section .descII {
+       /* margin-left: 30%;
+        margin-right: 50%;*/
+        float: none;
+        position: center;
+    }
+
+    section .descWidth {
+        max-width: 35vw;
+        min-width:30vw;
+    }
+
+    section .galleryI {
+        margin-bottom: 10px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width:100%;
+        height: 100%;
+        white-space: nowrap;
+    }
+
+    section .galleryI img {
+            white-space: nowrap;
+    }
+/* Opacity change on hover  https://codepen.io/nxworld/pen/ZYNOBZ*/
+    .galleryI .overlay img {
+        background: #1abc9c;
+    }
+
+    .galleryI .overlay img {
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .galleryI .overlay:hover img {
+        opacity: .5;
+    }
+        
+
+a:link, a:visited {
+    background-color: black;
+    font-style: oblique;
+    color: white;
+    text-decoration:underline;
+}
+
+a:link:hover {
+    text-decoration: underline overline;
+}
+
+a:link:active, a:visited:active {
+    color:black;
+    background-color: white;
+    text-decoration-line:line-through;
+    text-decoration-style:solid;
+}
+
+.visiting:any-link {
+    color: black;
+    background-color: white;
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+    footer div {
+        display: inline-flex;
+
+    }
+
+footer a{
+    padding:10px;
+}
+
+/*common fullscreen desktop query*/
+
+/*@media (min-width: 1450px) {
+    body {
+        background-color: yellow;
+        /*turns yellow when galleries start to misalign
+    }*/
+
+@media only screen and (max-width: 850px) { /*common media query for mobile*/
+    html {
+        /*background-color: blue;*/
+    }
+    body {
+    margin: 5% 5%; /*vertical and horiz*/
+    }
+
+   .column{
+        width:100%;
+    }
+
+    section{
+        padding:0%;
+    }
+
+    section .descI {
+        margin: 0;
+        float: left;
+        position: initial;
+    }
+    
+
+    section .descWidth {
+        max-width: 100vw;
+    }
+
+    section .desc{
+        margin:16px;
+    }
+
+    section .gallery{
+        max-width:100%;
+    }
+
+        section .pic {
+            float: right;
+            padding: 20px;
+            margin: 0px;
+            max-width:100%;
+        }
+
+    footer{
+        margin:0;
+    }
+        footer div {
+        display: inline-flex;
+        margin: 0 10%;
+        }
+}
