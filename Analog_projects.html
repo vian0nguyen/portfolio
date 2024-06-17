@@ -1,87 +1,102 @@
 ﻿<!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
-    </head>
+</head>
     <body>
-        <header>
-            <h1><a href="index.html">Vian Nguyen</a></h1>
-            <nav>
-                <div><a href="Digital_projects.html">digital</a></div> //
-                <div><a href="Analog_projects.html"class="visiting">analog</a></div> //
-                <div><a href="About.html">about</a></div> //
-                <div><a href="https://jubnuggets.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></div>
-            </nav>
-        </header>
+        <div class="container">
+            <header>
+                <h1><a href="index.html">Vian Nguyen</a></h1>
+                <nav>
+                    <div><a href="Digital_projects.html">digital</a></div>
+                    <div><a href="Analog_projects.html" class="visiting">analog</a></div>
+                    <div><a href="About.html">about</a></div>
+                    <div><a href="https://jubnuggets.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></div>
+                </nav>
+            </header>
 
-        <!--TODO: a scroll to top button to make navigation easier
-        https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
-    -->
+            <!--TODO: a scroll to top button to make navigation easier
+            https://www.w3schools.com/howto/howto_js_scroll_to_top.asp
+        -->
 
-        <h2><a name="analog">analog</a> <span style="font-family:'Overpass'">////</span></h2>
+            <h2><a name="analog">analog</a> <span style="font-family:'Overpass'">////</span></h2>
 
-        <section><a name="house"></a>
-            <div class="gallery">
-                <img src="Portfolio/HouseAlive/gameplay.png" width="800px" />
-                <img src="Portfolio/HouseAlive/thanks.png" width="800px" />
-            </div>
-            <div class="descI descWidth">
-                <h3 class="noGap">The House That Is Alive and Is In Love With You</h3>
-                <h4 class="noGap"><i> 2021</i> / <i>Game Designer</i></h4>
-                <p>
-                    As you live, you breathe life into your home. You’ve made your home alive by living in it and your home loves you for it. You scuff the walls with your life moments and so your home holds multitudes of lives and stories. This is a game about sharing the journeys that happen between the walls you’ve lived within.
-                </p>
-                <p>What makes a house a home?</p>
-                <iframe frameborder="0" src="https://itch.io/embed/930460?bg_color=f2f2f7&amp;fg_color=222222&amp;link_color=5d82e6&amp;border_color=cccccc" width="208" height="167"><a href="https://jubnuggets.itch.io/the-house-is-alive-and-is-in-love-with-you">The House That Is Alive and Is In Love With You by vian nguyen</a></iframe>
-            </div>
-        </section>
+            <a name="house"></a>
+            <section class="project">
+                <div class="gallery border">
+                    <img src="Portfolio/HouseAlive/gameplay.png" width="800px" />
+                    <img src="Portfolio/HouseAlive/thanks.png" width="800px" />
+                </div>
+                <div class="descI descWidth">
+                    <div class="desc-text">
+                        <h3 class="noGap">The House That Is Alive and Is In Love With You</h3>
+                        <h4 class="noGap"><i> 2021</i> / <i>Game Designer</i></h4>
+                        <p>
+                            As you live, you breathe life into your home. You’ve made your home alive by living in it and your home loves you for it. You scuff the walls with your life moments and so your home holds multitudes of lives and stories. This is a game about sharing the journeys that happen between the walls you’ve lived within.
+                        </p>
+                        <p>What makes a house a home?</p>
+                    </div>
+                    <div class="itchio">
+                        <iframe frameborder="0" src="https://itch.io/embed/930460?bg_color=f2f2f7&amp;fg_color=222222&amp;link_color=5d82e6&amp;border_color=cccccc" width="208" height="167"><a href="https://jubnuggets.itch.io/the-house-is-alive-and-is-in-love-with-you">The House That Is Alive and Is In Love With You by vian nguyen</a></iframe>
+                    </div>
+                </div>
+            </section>
 
-        <section><a name="roof"></a>
-                 <div class="gallery">
-                     <img src="Portfolio/UnderOneRoof/uor2.jpg" width="800px" />
-                     <img src="Portfolio/UnderOneRoof/uor3.jpg" width="800px" />
-                     <img src="Portfolio/UnderOneRoof/uor4.jpg" width="800px" />
-                 </div>
-            <div class="descI descWidth">
-                <h3 class="noGap">Under One Roof</h3>
-                <h4 class="noGap"><i> 2019</i> / <i>Game Designer + Writer</i></h4>
-                <p>
-                    Created in collaboration with Chuck Up, Isaac James Garrett, Korban Dennis, and Viditya Voleti for Global Game Jam 2019.<br /><br/>
-                    This is a GMless, diceless, role-playing game about making a home in a temporary space. There are conflicts, memories, and unexpected developments that happen when you share a home, especially in unique circumstances. For 2 to 4 players to play for an hour+.
-                </p>
-                <iframe frameborder="0" src="https://itch.io/embed/363533" width="208" height="167"><a href="https://vidityavoleti.itch.io/under-one-roof">Under One Roof by Viditya Voleti</a></iframe>
-            </div>
-        </section>
+            <a name="roof"></a>
+            <section class="project">
+                <div class="gallery">
+                    <img src="Portfolio/UnderOneRoof/uor2.jpg" width="800px" />
+                    <img src="Portfolio/UnderOneRoof/uor3.jpg" width="800px" />
+                    <img src="Portfolio/UnderOneRoof/uor4.jpg" width="800px" />
+                </div>
+                <div class="descI descWidth">
+                    <div class="desc-text">
+                        <h3 class="noGap">Under One Roof</h3>
+                        <h4 class="noGap"><i> 2019</i> / <i>Game Designer + Writer</i></h4>
+                        <p>
+                            Created in collaboration with Chuck Up, Isaac James Garrett, Korban Dennis, and Viditya Voleti for Global Game Jam 2019.<br /><br />
+                            This is a GMless, diceless, role-playing game about making a home in a temporary space. There are conflicts, memories, and unexpected developments that happen when you share a home, especially in unique circumstances. For 2 to 4 players to play for an hour+.
+                        </p>
+                    </div>
+                    <div class="itchio">
+                        <iframe frameborder="0" src="https://itch.io/embed/363533" width="208" height="167"><a href="https://vidityavoleti.itch.io/under-one-roof">Under One Roof by Viditya Voleti</a></iframe>
+                    </div>
+                </div>
+            </section>
+            
 
-
-        <section>
-            <div class="gallery"><a name="grief"></a>
-                <img src="Portfolio/Grief Game/Frame 8.png" width="501px" />
-                <img src="Portfolio/Grief Game/Frame 9.png" width="500px" />
-                <img src="Portfolio/Grief Game/Frame 10.png" width="500px" />
-            </div>
-            <div class="descI descWidth">
-                <h3 class="noGap">Grief (as I experience it)</h3>
-                <h4 class="noGap"><i> 2018</i> / <i>Game Designer + Graphic Designer + Fabricator</i></h4>
-                <p>
-                    <i>“Disclose as you wish, pass if you must. There are no right answers. Grieving is a process, not a solution, it’s defined as deep mental anguish in response to an event or situation.”</i><br /><br />
-                    This game was created as a personal coping strategy through my own process of grief. I struggled most with taking the space I needed to talk about my feelings with death and loss while also feeling safe that my family and friends would want to participate with me as well.
-                </p>
-                <iframe frameborder="0" src="https://itch.io/embed/425428" width="208" height="167"><a href="https://jubnuggets.itch.io/grief-as-i-experience-it">Grief (as I experience it) by vian nguyen</a></iframe>
-            </div>
-
-        </section>
-
+            <a name="grief"></a>
+            <section class="project">
+                <div class="gallery">
+                    <img src="Portfolio/Grief Game/Frame 8.png" width="501px" />
+                    <img src="Portfolio/Grief Game/Frame 9.png" width="500px" />
+                    <img src="Portfolio/Grief Game/Frame 10.png" width="500px" />
+                </div>
+                <div class="descI descWidth">
+                    <div class="desc-text">
+                        <h3 class="noGap">Grief (as I experience it)</h3>
+                        <h4 class="noGap"><i> 2018</i> / <i>Game Designer + Graphic Designer + Fabricator</i></h4>
+                        <p>
+                            <i>“Disclose as you wish, pass if you must. There are no right answers. Grieving is a process, not a solution, it’s defined as deep mental anguish in response to an event or situation.”</i><br /><br />
+                            This game was created as a personal coping strategy through my own process of grief. I struggled most with taking the space I needed to talk about my feelings with death and loss while also feeling safe that my family and friends would want to participate with me as well.
+                        </p>
+                    </div>
+                    <div class="itchio">
+                        <iframe frameborder="0" src="https://itch.io/embed/425428?bg_color=ffffff&amp;fg_color=222222&amp;link_color=8797B2&amp;border_color=a7b8cc" width="208" height="167"><a href="https://jubnuggets.itch.io/grief-as-i-experience-it">Grief (as I experience it) by vian nguyen</a></iframe>
+                    </div>
+                </div>
+            </section>
         <footer>
-            <div><a href="https://jubnuggets.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a></div>
-            <div><a href="mailto:vnguyen@mica.edu" target="_blank" rel="noopener noreferrer">contact</a></div>
-            <div><a href="https://www.linkedin.com/in/vian-nguyen-182b6a17b/" target="_blank" rel="noopener noreferrer">linkedin</a></div>
-
+            <a href="https://jubnuggets.itch.io/" target="_blank" rel="noopener noreferrer">itch.io</a>
+            <a href="mailto:vnguyen@mica.edu" target="_blank" rel="noopener noreferrer">contact</a>
+            <a href="https://www.linkedin.com/in/vian-nguyen-182b6a17b/" target="_blank" rel="noopener noreferrer">linkedin</a>
         </footer>
+    </div>
     </body>
 </html>

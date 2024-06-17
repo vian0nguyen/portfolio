@@ -1,177 +1,70 @@
-﻿
+﻿body {
+    font-family: "Overpass", sans-serif;
+    margin: 90px 130px 0px 130px;
+}
 
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
 
+h1,
+h2 {
+    font-family: "Nunito", sans-serif;
+}
 
 h1 {
-    font-family: 'Nunito', sans-serif;
     font-size: 3.85em;
     margin-bottom: -7px;
     margin-top: -10px;
-    color: white;
-    /*TODO: might add a hero div to scroll through the nice nature pic*/
 }
+
 h2 {
-    font-family: 'Nunito', sans-serif;
     font-size: 1.98em;
-    color: white;
+    margin: 40px 0 40px 0;
 }
 
 h4 {
     font-weight: lighter;
-    color: white;
 }
 
-
-.noGap{
-    margin:0;
-    padding:0;
+header {
+    text-align: center;
+    padding-bottom: 10px;
 }
 
-
-body {
-    font-family: 'Overpass', sans-serif;
-    margin: 90px 90px; /*vertical and horiz*/
-    /*margin:0 0 0 10vw;*/
-    background-color: #111226;
-    color: white;
-}
-
-header{
-    text-align:center;
-}
-
-.autoscale {
-    max-width: 100%;
-    height: auto;
-    /*https://responsivedesign.is/guidelines/flexible-images-and-media/*/
-}
-
-.textback{
-    background-color:#000;
-    padding: 10px 20px;
-    margin-top:10px;
-
-}
-
-nav{
-    font-size:1.36em;
-}
-
-nav > div{
+nav {
+    font-size: 1.36em;
     display: inline-flex;
 
+    margin-top: 5px;
 }
 
-.column{
-    float: left;
-    padding: 10px;
-
+/* add decorative slashes between nav items */
+nav div:after {
+  content: ' // '; 
+  white-space: pre; /* make sure white spaces in "content" above aren't collapsed/removed */
 }
 
-.left {
-    width: 40%;
+nav div:last-child:after {
+  content: '';
 }
 
-.right{
-    width: 50%;
+footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    padding: 70px 0 24px 0;
 }
 
-.row:after{
-    content: "";
-    display: table;
-    clear: both;
+footer a {
+    margin: 10px;
 }
-
-section .descWidth {
-    /*word-wrap: break-word;*/
-    width: 100px;
-}
-}
-section {
-    /*display: flex;*/
-    padding:30px 0;
-    overflow:hidden;
-    margin: 0px -90px;
-    position:relative;
-}
-    section img{
-        max-width:100%;
-    }
-    section .pic {
-        float: right;
-        padding-left: 20px;
-        margin-right:90px;
-        margin-bottom: 10px;
-    }
-
-    section .desc {
-        margin-left: 90px;
-    }
-    section .gallery {
-        float: right;
-        margin-bottom: 10px;
-
-        overflow-x: auto;
-        overflow-y: hidden;
-        max-width: 55%;
-        height:50%;
-        white-space: nowrap;
-    }
-
-        section .gallery img {
-            /*white-space: nowrap;*/
-        }
-
-    section .descI {
-       margin-left: 90px;
-        float: left;
-
-        position:absolute;
-    }
-    section .descII {
-       /* margin-left: 30%;
-        margin-right: 50%;*/
-        float: none;
-        position: center;
-    }
-
-    section .descWidth {
-        max-width: 35vw;
-        min-width:30vw;
-    }
-
-    section .galleryI {
-        margin-bottom: 10px;
-        overflow-x: auto;
-        overflow-y: hidden;
-        width:100%;
-        height: 100%;
-        white-space: nowrap;
-    }
-
-    section .galleryI img {
-            white-space: nowrap;
-    }
-/* Opacity change on hover  https://codepen.io/nxworld/pen/ZYNOBZ*/
-    .galleryI .overlay img {
-        background: #1abc9c;
-    }
-
-    .galleryI .overlay img {
-        opacity: 1;
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-    }
-
-    .galleryI .overlay:hover img {
-        opacity: .5;
-    }
-        
 
 a:link, a:visited {
-    background-color: black;
     font-style: oblique;
-    color: white;
+    color: #000;
     text-decoration:underline;
 }
 
@@ -180,89 +73,268 @@ a:link:hover {
 }
 
 a:link:active, a:visited:active {
-    color:black;
-    background-color: white;
-    text-decoration-line:line-through;
-    text-decoration-style:solid;
-}
-
-.visiting:any-link {
-    color: black;
-    background-color: white;
+    color: #FFF;
+    background-color: black;
     text-decoration-line: line-through;
     text-decoration-style: solid;
 }
 
-footer {
+.visiting:any-link {
+    color: #FFF;
+    background-color: black;
+    text-decoration-line: line-through;
+    text-decoration-style: solid;
+}
+
+.noGap {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------------------------*/
+/*=========== INDEX & ABOUT PAGES ===========*/
+/*-------------------------------------------*/
+.galleryI {
     display: flex;
     justify-content: center;
-    text-align: center;
+    margin: 0 -130px; /* ignore body's margin */
 }
 
-    footer div {
-        display: inline-flex;
-
-    }
-
-footer a{
-    padding:10px;
+.galleryI img {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
 }
 
-/*common fullscreen desktop query*/
+.galleryI .overlay img {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
 
-/*@media (min-width: 1450px) {
-    body {
-        background-color: yellow;
-        /*turns yellow when galleries start to misalign
-    }*/
+.galleryI .overlay:hover img {
+    opacity: .5;
+}
 
-@media only screen and (max-width: 850px) { /*common media query for mobile*/
-    html {
-        /*background-color: blue;*/
-    }
-    body {
-    margin: 5% 5%; /*vertical and horiz*/
-    }
-
-   .column{
-        width:100%;
-    }
-
-    section{
-        padding:0%;
-    }
-
-    section .descI {
-        margin: 0;
-        float: left;
-        position: initial;
-    }
+/* flex for about section, not including h2 */
+.about > div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     
+    margin-top: 20px;
+    margin-left: 120px; /* pull about section more into center */
+    margin-right: 120px;
+}
 
-    section .descWidth {
-        max-width: 100vw;
+/* makes h2 left-aligned with content in about section */
+.about h2 {
+    margin-left: 120px; /* pull about section more into center */
+    margin-right: 120px;
+}
+
+.about img { 
+    max-width: 500px;
+    min-width: 0;
+    margin-bottom: 19px; /* add margin between image and description when vertically stacked */
+
+    align-self: center;
+}
+
+.about .desc {
+    max-width: 500px;
+    margin-right: 30px;
+    margin-top: 19px; /* add margin between image and description when vertically stacked */
+}
+
+/*----------------------------------------------*/
+/*=========== DIGITAL & ANALOG PAGES ===========*/
+/*----------------------------------------------*/
+.project {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 80px;
+}
+
+section .gallery {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 55%; /*for auto sizing images to work you need to set a width of the container*/
+    white-space: nowrap;
+}
+
+section .gallery img {
+    /*auto size images to fit in container https://www.arungudelli.com/tutorial/css/auto-resize-an-image-to-fit-into-a-html-div-using-css/*/
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* add border so white image does not get lost in background */
+.gallery.border { 
+    /* border: .5px solid gray; */ /* alternate style, if plain border is preferred */
+    filter: drop-shadow(0 0 0.05rem gray); /* alternate style, if drop shadow is preferred */
+} 
+
+.descI {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-right: 38px;
+}
+
+.descI .itchio {
+    margin-top: 40px;
+}
+
+.desc-text {
+    max-width: 500px;
+}
+
+section:last-of-type {
+    margin-bottom: 0;
+}
+
+/*---------------------------------------*/
+/*=========== SMALLER SCREENS ===========*/
+/*---------------------------------------*/
+/* MEDIUM SIZE */
+@media (max-width: 1280px) { 
+    footer {
+        padding-top: 50px;
     }
 
-    section .desc{
-        margin:16px;
+    /*=========== INDEX & ABOUT PAGES ===========*/
+    .about {
+        display: flex;
+        flex-direction: column;
     }
 
-    section .gallery{
-        max-width:100%;
+    .about > div {
+        display: initial; /* take off flex display */
+        width: 100%;
+        max-width: 500px;
+        align-self: center;
+
+        margin-top: 0;
     }
 
-        section .pic {
-            float: right;
-            padding: 20px;
-            margin: 0px;
-            max-width:100%;
-        }
-
-    footer{
-        margin:0;
+    .about img, 
+    .about h2 {
+        width: 100%;
+        max-width: 500px;
+        align-self: center;
     }
-        footer div {
-        display: inline-flex;
-        margin: 0 10%;
-        }
+
+    .about .desc {
+        margin-right: 0;
+        align-self: center;
+    }
+
+    /*=========== DIGITAL & ANALOG PAGES ===========*/
+    .project {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section .gallery {
+        max-width: 100%;
+    }
+
+    .project .descI {
+        flex-direction: row;
+        margin-right: 0;
+        margin-top: 30px;
+    }
+
+    .desc-text {
+        margin-right: 20px;
+    }
+
+    .project .itchio {
+        margin-top: 0;
+        width: 470px;
+        text-align: right;
+        margin-right: 0;
+    }
+}
+
+/* BUG FIX */
+@media (max-width: 934px) { 
+    /*=========== DIGITAL & ANALOG PAGES ===========*/
+    .project .itchio { 
+        width: auto; /* fix issue with iframe being pushed to edge of screen */
+    }
+}
+
+
+/* SMALLER MEDIUM SIZE */
+@media (max-width: 850px) {
+    body {
+        margin: 70px 80px 0px 80px;
+    } 
+
+    /*=========== INDEX & ABOUT PAGES ===========*/
+    .galleryI {
+        margin: 0 -80px; /* ignore body's margin */
+    }
+
+    /*=========== DIGITAL & ANALOG PAGES ===========*/
+    .project {
+        margin-bottom: 40px;
+    }
+
+    .project .descI {
+        flex-direction: column;
+    }
+
+    .descI {
+        margin-right: 0;
+        margin-top: 25px;
+    }
+
+    .desc-text {
+        max-width: none;
+        margin-right: 0;
+    }
+
+    .project .itchio {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+/* SMALL SIZE */
+@media (max-width: 580px) {
+    body {
+        margin: 50px 40px 0px 40px;
+    } 
+
+    h1 {
+        font-size: 3.2em;
+    }
+
+    nav {
+        font-size: 1.18em;
+        margin-top: 8px;
+    }
+
+    /*=========== INDEX & ABOUT PAGES ===========*/
+    .galleryI {
+        display: inline;
+        margin: 0;
+    }
+
+    .galleryI a {
+        height: 0;
+        font-size: 1;
+    }
+
+    .galleryI img {
+        display: block; /* remove extra space below (inline) image */
+    }
 }
