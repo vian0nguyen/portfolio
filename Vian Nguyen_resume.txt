@@ -1,0 +1,53 @@
+Vian Nguyen
+jubnuggets@gmail.com
+jubnuggets.com
+
+PROFESSIONAL EXPERIENCE:
+
+Lead Game Designer with No Lies Please LLC
+April 2024 to NOW
+
+- Developing game systems for a narrative educational game about misinformation
+- Creating design documentation, playtest protocol and internal process documents 
+- Collaborating with Art, Education and Writing teams to create meaningful and relevant play experiences
+- Rapid prototyping and wireframing systemic design experiences
+(Supported by the Harvard Innovation Lab)
+
+Game Designer II with Filament Learning Games
+April 2022 - Jan 2024
+
+- Collaborated with external clients to support their learning goals
+- Leaded game projects from Prototype to Gold in an agile environment
+- Defined and maintained Jira user stories and acceptance tests for QA testing
+- Wrote internal on-boarding materials, design templates and references for design 
+- Collaborated across disciplines with Producers, Engineers, UI/UX designers, Content, Art, and other teams to keep the project on scope, on budget and on time
+
+Embedded QA Tester with Harmonix Music Systems (Epic Games)
+November 2020 to April 2022
+
+MISSION & VALUES: 
+
+Deep curiosity in innovating play’s ability to teach empathy and understanding in players.
+Excited by interactivity’s unique ability to influence a players’ understanding of the world through the systems we design around them.
+
+EDUCATION: 
+
+Maryland Institute College of Art 2020
+Bachelors of Fine Arts in Interactive Arts with a concentration in Game Design
+
+SKILLS:
+Game Design
+Design Documentation, UX Writing, Technical Design, Systems Design 
+Level Design, Narrative Design
+
+Programming
+C#, Unity, SourceTree, Github
+
+Documentation
+Jira, Confluence, Microsoft Office TestRail, Trello
+
+Creative
+Figma, Adobe Creative Suite: Illustrator, Photoshop, InDesign
+
+Modeling
+Blender, Rhino CAD, ProBuilder
