@@ -150,9 +150,24 @@ a:link:active, a:visited:active {
   /* Truncate settings */
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 5; /* Number of lines to show */
+  -webkit-line-clamp: 2; /* Number of lines to show */
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
+}
+
+.project-image{
+    width: 100%;
+    height: 300px; /* Fixed height for images */
+    margin-bottom: 1rem;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.project-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    object-position: center;
 }
 
 section .gallery {
